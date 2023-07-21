@@ -64,11 +64,10 @@ namespace regprowf
                     //StreamWriter outFile = new StreamWriter("output.txt");
                     //outFile.WriteLine(content.Text);
                     //outFile.Close();
-                    Console.WriteLine(content.Text);
-                    using(StreamWriter writeFile = new StreamWriter("output.txt"))
-                    {
-                        writeFile.WriteLine(content.Text);
-                    }
+                    Console.WriteLine(content.Text);                  
+                    StreamWriter outFile = new StreamWriter("output.txt");
+                    outFile.WriteLine(content.Text);
+                    outFile.Close();
                     driver.Navigate().Refresh();
 
                     System.Threading.Thread.Sleep(60000);
@@ -104,6 +103,12 @@ namespace regprowf
         private void emailInput_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+            this.Hide();
         }
     }
 }
