@@ -46,7 +46,7 @@ namespace regprowf
             
 
             WebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("https://ssb.ua.edu/pls/PROD/ua_bwckschd.p_disp_detail_sched?term_in=202310&crn_in=" + crnInput);
+            driver.Navigate().GoToUrl("https://ssb.ua.edu/pls/PROD/ua_bwckschd.p_disp_detail_sched?term_in=202340&crn_in=" + crnInput);
 
             regChecker(mbUsername, mbPassword, crnInput, driver);
 
