@@ -41,7 +41,7 @@ namespace regprowf
                 string crnInput = textBox1.Text;
                 string toEmail = emailInput.Text;
                 WebDriver driver = new ChromeDriver();
-                driver.Navigate().GoToUrl("https://ssb.ua.edu/pls/PROD/ua_bwckschd.p_disp_detail_sched?term_in=202310&crn_in=" + crnInput);
+                driver.Navigate().GoToUrl("https://ssb.ua.edu/pls/PROD/ua_bwckschd.p_disp_detail_sched?term_in=202540&crn_in=" + crnInput);
                 regChecker(toEmail, driver);
                 static void fileChecker(string toEmail, WebDriver driver)
                 {
